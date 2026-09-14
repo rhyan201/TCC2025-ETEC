@@ -1,0 +1,187 @@
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 70px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #F44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}   
+
+h1{
+    color: white;
+}
+
+body {
+    min-height: 116vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../IMGS/backgroud.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.wrapper {
+  width: 900px;
+  max-height: 200vh;
+  background: rgba(255, 255, 255, 0.103); /* branco translúcido, pouca opacidade */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px); /* Safari */
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  text-align: left;
+  color: #FFF;
+}
+.wrapper2 {
+  width: 200px;
+  max-height: 200vh;
+  background: rgba(255, 255, 255, 0.103); /* branco translúcido, pouca opacidade */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px); /* Safari */
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  text-align: left;
+  color: #FFF;
+}
+
+
+.main-container {
+    display: flex;
+    justify-content: center;   /* centraliza no meio */
+    align-items: flex-start;   /* alinha pelo topo */
+    gap: 30px;                 /* espaço entre os dois blocos */
+    flex-wrap: wrap;           /* permite quebrar no mobile */
+    padding: 40px;
+}
+
+.wrapper, .wrapper2 {
+    width: 45%;          /* cada um ocupa metade da largura */
+    min-width: 350px;    /* evita esmagar no celular */
+}
+
+.input-box {
+            position: relative;
+            margin: 15px 0;
+            width: 100%;
+        }
+
+.input-box input,
+.input-box select {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    background: rgba(255,255,255,0.15);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 14px;
+    color: white; /* agora o texto no campo aparece branco */
+}
+
+/* Opções da lista suspensa */
+option {
+    color: black; /* mantém legível quando usuário abre */
+}
+
+/* Primeira opção (Selecione...) */
+option[value=""] {
+    color: white;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+form select,
+form input {
+  width: 100%;        /* ocupa a largura total do container */
+  padding: 10px;      /* espaço interno */
+  margin: 10px 0;     /* espaço entre campos */
+  border: none;       /* tira borda padrão */
+  border-radius: 20px;/* deixa arredondado como o select */
+  outline: none;      /* tira borda azul ao clicar */
+  font-size: 16px;    /* deixa fonte igual */ /* texto centralizado */
+  box-sizing: border-box;
+}
+
+
+#compatibilidade {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#compatibilidade h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#compatibilidade-resultados p {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#compatibilidade-resultados p:contains('❌') {
+    background-color: #ffe6e6;
+    color: #d63031;
+}
+
+#compatibilidade-resultados p:contains('✅') {
+    background-color: #e6ffe6;
+    color: #00b894;
+}
+
+#compatibilidade-resultados p:contains('⚠️') {
+    background-color: #fffae6;
+    color: #fdcb6e;
+}

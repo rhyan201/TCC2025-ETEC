@@ -1,0 +1,189 @@
+* {
+     margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+a{
+   text-decoration: none;
+   color: white; 
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../IMGS/backgroud.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 350px);
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 70px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #F44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.wrapper {
+  width: 600px;
+  max-height: 80vh;
+  background: rgba(255, 255, 255, 0.103);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px); /* Safari */
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  text-align: left;
+  color: #FFF;
+}
+
+.welcome-message {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+}
+
+.welcome-message h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.welcome-message p {
+    font-size: 1.1em;
+    opacity: 0.9;
+    text-align: center;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.admin-name {
+    color: white;
+    font-weight: bold;
+}
+
+.logout-section {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-logout {
+    display: inline-block;
+    background: rgba(255, 107, 107, 0.8);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.btn-logout:hover {
+    background: rgba(255, 82, 82, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.3);
+}
+
+.wrapper a {
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.wrapper a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.wrapper a h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+/* Ajuste para os ícones nos links */
+.wrapper a i {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+

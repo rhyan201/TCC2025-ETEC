@@ -1,0 +1,233 @@
+* {
+     margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+  text-align: center;
+  color: #FFF;
+}
+label{
+  text-align: center;
+  color: #FFF;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../IMGS/backgroud.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* novo container só pro conteúdo central */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 350px);
+}
+
+.wrapper {
+  width: 600px;
+  max-height: 80vh;
+  background: rgba(255, 255, 255, 0.103); /* branco translúcido, pouca opacidade */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px); /* Safari */
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  text-align: left;
+  color: #FFF;
+}
+
+.voltar {
+  display: block;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  text-decoration: none; /* se quiser tirar o sublinhado */
+}
+
+.voltar:hover {
+  color: lightsalmon; /* efeito hover igual ao botão */
+}
+
+button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 30px;
+      background: #fff;
+      color: #333;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: 0.3s;
+    }
+
+button:hover{
+  background:lightsalmon;
+  color: white;
+}
+.input-box {
+            position: relative;
+            margin: 15px 0;
+            width: 100%;
+        }
+
+.input-box input,
+.input-box select {
+width: 100%;
+padding: 12px 40px 12px 15px;
+background: rgba(255,255,255,0.15);
+border: none;
+outline: none;
+border-radius: 30px;
+font-size: 14px;
+color: black;
+}
+
+        .input-box input::placeholder {
+            color: white(255,255,255,0.7);
+        }
+
+        .input-box select {
+            color: white;
+            appearance: none;
+        }
+        
+        .input-box option{
+          color: black;
+          appearance: none  ;
+        }
+        .input-box optgroup{
+          color: black;
+          appearance: none  ;
+        }
+
+        .input-box i {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 18px;
+        }
+
+form select,
+form input {
+  width: 100%;        /* ocupa a largura total do container */
+  padding: 10px;      /* espaço interno */
+  margin: 10px 0;     /* espaço entre campos */
+  border: none;       /* tira borda padrão */
+  border-radius: 20px;/* deixa arredondado como o select */
+  outline: none;      /* tira borda azul ao clicar */
+  font-size: 16px;    /* deixa fonte igual */ /* texto centralizado */
+  box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 70px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #F44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;  /* espaço maior entre opções */
+  margin: 15px 0;
+  color: #fff;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Esconde o checkbox padrão */
+.checkbox-group input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #fff;
+  border-radius: 6px; /* deixa levemente arredondado */
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.checkbox-group input[type="checkbox"]:hover {
+  border-color: pink;
+}
+
+/* Quando marcado */
+.checkbox-group input[type="checkbox"]:checked {
+  background: pink;
+  border-color: pink;
+}
+
+/* Check estilizado dentro da caixinha */
+.checkbox-group input[type="checkbox"]:checked::after {
+  content: "✔";
+  position: absolute;
+  font-size: 13px;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
