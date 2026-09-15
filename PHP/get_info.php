@@ -6,7 +6,7 @@ Share
 36 lines
 
 <?php
-include("conexao.php");
+require_once __DIR__ . '/conexao.php';
 if (isset($_GET['tipo']) && isset($_GET['id'])) {
     $tipo = $_GET['tipo'];
     $id = intval($_GET['id']);  // Garante que o ID seja um inteiro

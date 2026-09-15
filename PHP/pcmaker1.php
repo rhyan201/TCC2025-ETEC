@@ -1,5 +1,5 @@
 <?php
-include('conexao.php');
+require_once __DIR__ . '/conexao.php';
 ?>
 
 <!DOCTYPE html>
@@ -86,7 +86,7 @@ include('conexao.php');
                     echo "<option value='{$row['nome_psu']}' 
                                data-potencia='{$row['watts_psu']}' 
                                data-modular='{$row['ismodular']}' 
-                               data-certificado='{$row['certificado_psu']}'>";
+                               data-certificado='{$row['certificado']}'>";
                     echo $row['nome_psu'];
                     echo "</option>";
                 }

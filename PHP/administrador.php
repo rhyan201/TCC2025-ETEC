@@ -1,7 +1,7 @@
 <?php
-include('conexao.php');
-session_start();
+require_once __DIR__ . '/conexao.php';
 
+session_start();
 $funcao = $_GET["funcao"] ?? '';
 
 if ($funcao == "cadastrar") {
@@ -26,8 +26,7 @@ if ($funcao == "logar") {
     
     if (mysqli_num_rows($query) == 1) {
         $admin = mysqli_fetch_assoc($query);
-        
-}
+
         $_SESSION['admin_logado'] = true;
         $_SESSION['id_admin'] = $admin['id_admin'];
         $_SESSION['nome_admin'] = $admin['nome_admin'];    
@@ -37,3 +36,4 @@ if ($funcao == "logar") {
     } else {
         echo "<script>alert('Usuário ou senha incorretos!!');history.back();</script>";
     }
+}

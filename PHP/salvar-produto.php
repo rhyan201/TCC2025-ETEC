@@ -3,7 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-include "conexao.php";
+require_once __DIR__ . '/conexao.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $tipo = trim($_POST['tipo'] ?? '');

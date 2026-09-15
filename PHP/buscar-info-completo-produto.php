@@ -2,7 +2,7 @@
 header('Content-Type: application/json; charset=utf-8');
 if (ob_get_length()) ob_clean();
 
-include("conexao.php");
+require_once __DIR__ . '/conexao.php';
 
 try {
     $categoria = $_GET['categoria'] ?? '';

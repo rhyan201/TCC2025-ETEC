@@ -2,7 +2,7 @@
 header('Content-Type: application/json; charset=utf-8');
 if (ob_get_length()) ob_clean();
 
-include("conexao.php");
+require_once __DIR__ . '/conexao.php';
 
 try {
     $categoria = $_POST['categoria'] ?? '';
@@ -15,7 +15,7 @@ try {
             $sql = "DELETE FROM processador WHERE cod_processador = ?";
             break;
         case 'gpu':
-            $sql = "DELETE FROM cpu WHERE cod_gpu = ?";
+            $sql = "DELETE FROM gpu WHERE cod_gpu = ?";
             break;
         case 'motherboard':
             $sql = "DELETE FROM motherboard WHERE cod_motherboard = ?";
