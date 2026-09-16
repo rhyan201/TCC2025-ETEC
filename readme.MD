@@ -68,6 +68,10 @@ Como usar o sistema:
             Excluir produtos
             Adicionar administradores
 
+        O login para administrador padrão é o seguinte:
+            Email: admin@email.com
+            Senha: admin123
+
 Projeto desenvolvido como Trabalho de Conclusão de Curso — Técnico em Informática, ETEC de Iguape, 2025.
 
 Acesse meu perfil no GitHub!
