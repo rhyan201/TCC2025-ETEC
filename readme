@@ -1,7 +1,0 @@
-Essa é a versão final do TCC "PCMAKER". 
-
--> Para você conseguir fazer o programa funcionar, é necessário estar com o XAMPP rodando. 
--> Ao executar o XAMPP, inicie o APACHE e o MySQL. 
--> Para acessar o banco de dados local, clique no botão Admin, ao lado do Mysql. É necessário a importação do arquivo "pcmaker.sql" presente no projeto.
--> Após a importação do database, o sistema deve estar funcionando perfeitamente.
-
