@@ -51,27 +51,6 @@ Sempre acesse o projeto pelo navegador, através do endereço localhost.
 
 -> Acesse o site digitando "http://localhost/tcc/index.html" (isso considerando que você colocou a pasta do projeto em htdocs, na pasta do xampp)
 
-Como usar o sistema: 
-    Usuário comum:
-        O usuário comum possui acesso as páginas comuns do site:
-            Monte seu PC
-            Calculadora de gasto energético
-            Inicio do site
-            Tutoriais
-
-    Administrador:
-        Os administradores possuem acesso a funções restritas, podendo realizar alterações no banco de dados do sistema:
-            Dashboard que leva para as outras páginas 
-            Adicionar produtos
-            Editar produtos
-            Visualizar Produtos
-            Excluir produtos
-            Adicionar administradores
-
-        O login para administrador padrão é o seguinte:
-            Email: admin@email.com
-            Senha: admin123
-
 Projeto desenvolvido como Trabalho de Conclusão de Curso — Técnico em Informática, ETEC de Iguape, 2025.
 
 Acesse meu perfil no GitHub!
